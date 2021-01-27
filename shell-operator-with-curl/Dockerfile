@@ -1,4 +1,2 @@
 FROM flant/shell-operator:latest
-RUN apt-get update && \
-    apt-get install -y curl && \
-    rm -rf /var/lib/apt/lists
+RUN apk --no-cache add curl
